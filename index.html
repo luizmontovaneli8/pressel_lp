@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080808">
+    <meta name="description" content="O que voce procura está na próxima pagina!">
+    <title>Continue — Seu próximo passo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="headline">
+        <h1 id="headline">O que voce procura está na <span>próxima pagina!</span></h1>
+
+        <div class="action">
+          <div class="slider-shell" id="slider-shell">
+            <div class="slider-fill" id="slider-fill"></div>
+            <span class="slider-label" id="slider-label" aria-hidden="true">Deslize para continuar <span>› › ›</span></span>
+            <span class="slider-thumb" id="slider-thumb" aria-hidden="true">→</span>
+            <input id="continue-slider" type="range" min="0" max="100" value="0" step="1" aria-label="Deslize até o final para abrir o YouTube" aria-describedby="slider-hint">
+          </div>
+          <p class="sr-only" id="slider-hint">Arraste até o final para abrir o YouTube.<span class="keyboard-hint"> No teclado, use as setas ou End.</span></p>
+          <p class="sr-only" role="status" id="status"></p>
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
